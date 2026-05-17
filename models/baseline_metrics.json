@@ -1,0 +1,27 @@
+{
+  "model": "TF-IDF (1-2g, max_features=50k) + LogReg (liblinear, balanced)",
+  "random_state": 42,
+  "train_time_sec": 40.2,
+  "metrics": {
+    "train": {
+      "Accuracy": 0.8713,
+      "F1-macro": 0.8706,
+      "F1-weighted": 0.8706
+    },
+    "validation": {
+      "Accuracy": 0.8067,
+      "F1-macro": 0.7975,
+      "F1-weighted": 0.807
+    },
+    "test": {
+      "Accuracy": 0.8064,
+      "F1-macro": 0.7959,
+      "F1-weighted": 0.8066
+    }
+  },
+  "split_sizes": {
+    "train": 59440,
+    "val": 12738,
+    "test": 12738
+  }
+}

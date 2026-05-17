@@ -1,0 +1,10 @@
+{
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dim": 384,
+  "n_texts": 84916,
+  "max_seq_length": 256,
+  "batch_size": 64,
+  "normalize_embeddings": true,
+  "encoding_time_minutes": 3.36,
+  "gpu": "Tesla T4"
+}

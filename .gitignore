@@ -1,0 +1,39 @@
+# Données (trop volumineuses, jamais sur GitHub)
+data/processed/*.parquet
+data/processed/*.npy
+data/X_train_update.csv
+data/Y_train_CVw08PX.csv
+
+# Modèles entraînés (volumineux, regénérables)
+models/*.joblib
+
+# Garder les JSON de métriques (légers, utiles pour le README)
+!models/*_metrics.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environnements virtuels
+venv/
+env/
+.env
+
+# Outputs notebooks volumineux (optionnel)
+# *.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log

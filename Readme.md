@@ -2,9 +2,36 @@
 
 Projet personnel réalisé en préparation d'une candidature à l'alternance Data Scientist chez ADEO (M2, rentrée 2026).
 
-L'idée : prendre un problème central d'un Data Scientist Marketplace — la classification automatique des produits dans la taxonomie catalogue — et le traiter sur un dataset proxy public, en allant aussi loin que possible avec des moyens raisonnables.
+## Le problème
+
+Une marketplace comme celle de Leroy Merlin (filiale ADEO) hébèrge des millions de produits déposés par des milliers de vendeurs tiers. Chaque produit doit être rangé dans la bonne catégorie de l'arborescence catalogue ("Outillage > Électroportatif > Perceuses", par exemple), sinon il devient invisible dans la navigation et le moteur de recherche.
+
+Demander aux vendeurs de classer eux-mêmes leurs produits dans une taxonomie de plusieurs milliers de catégories ne marche pas en pratique :
+
+- Les vendeurs ne connaissent pas l'arborescence interne de la plateforme
+- Ils choisissent la catégorie la plus large pour ne pas se tromper
+- Ils saisissent peu ou pas de description
+- Ils utilisent un vocabulaire hétérogène d'un vendeur à l'autre
+
+D'où l'enjeu : **classer automatiquement les produits dans la bonne catégorie, à partir des données texte fournies par le vendeur (titre + description).**
+
+C'est l'un des sujets ML récurrents d'un Data Scientist Marketplace, au même titre que la détection de doublons, la détection d'anomalies de prix, ou le ranking de la recherche.
+
+## Pourquoi c'est non trivial
+
+Trois difficultés caractéristiques apparaissent dès qu'on regarde un vrai catalogue marketplace :
+
+1. **Texte court et hétérogène.** Un titre fait souvent 8-12 mots, parfois une simple liste de mots-clés. Les descriptions, quand elles existent, vont de quelques lignes à des notices complètes.
+2. **Données manquantes massives.** Une part significative des produits (souvent un tiers ou plus) arrive sans description.
+3. **Catégories proches.** Beaucoup de sous-catégories partagent un vocabulaire commun (livres en lots vs livres d'occasion, jouets pour bébés vs puériculture, vis bois vs vis métal). Distinguer ces voisines est la vraie difficulté.
+
+N'ayant pas accès au catalogue ADEO, ce projet attaque le problème sur le dataset public le plus proche en termes de structure : **Rakuten France Multimodal Product Data Classification** (~85 000 produits, 27 catégories, marketplace française multilingue de fait). Les trois difficultés ci-dessus s'y retrouvent à l'identique.
 
 ---
+
+## Résultats
+
+[... la suite reste identique]
 
 ## Résultats
 

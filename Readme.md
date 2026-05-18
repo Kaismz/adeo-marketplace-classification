@@ -31,10 +31,6 @@ N'ayant pas accès au catalogue ADEO, ce projet attaque le problème sur le data
 
 ## Résultats
 
-[... la suite reste identique]
-
-## Résultats
-
 | Modèle | F1-macro (test) | Accuracy (test) | Temps train | Inférence |
 |---|:---:|:---:|:---:|:---:|
 | **Baseline TF-IDF + LogReg** | **0.796** | **0.806** | 40 s | < 1 ms / produit |
